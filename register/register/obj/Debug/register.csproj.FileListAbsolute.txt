@@ -1,0 +1,7 @@
+C:\Users\cc2-pc06\Documents\Proyect\register\register\bin\Debug\register.exe
+C:\Users\cc2-pc06\Documents\Proyect\register\register\bin\Debug\register.pdb
+C:\Users\cc2-pc06\Documents\Proyect\register\register\obj\Debug\register.csprojResolveAssemblyReference.cache
+C:\Users\cc2-pc06\Documents\Proyect\register\register\obj\Debug\register.MainForm.resources
+C:\Users\cc2-pc06\Documents\Proyect\register\register\obj\Debug\register.csproj.GenerateResource.Cache
+C:\Users\cc2-pc06\Documents\Proyect\register\register\obj\Debug\register.exe
+C:\Users\cc2-pc06\Documents\Proyect\register\register\obj\Debug\register.pdb
