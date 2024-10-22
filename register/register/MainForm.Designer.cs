@@ -54,6 +54,7 @@ namespace register
 			this.lblrfcshow = new System.Windows.Forms.Label();
 			this.dtpbirthdate = new System.Windows.Forms.DateTimePicker();
 			this.lblbithdate = new System.Windows.Forms.Label();
+			this.btncalc = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lbltittle
@@ -221,6 +222,7 @@ namespace register
 			this.dtpbirthdate.MaximumSize = new System.Drawing.Size(200, 20);
 			this.dtpbirthdate.MinimumSize = new System.Drawing.Size(200, 20);
 			this.dtpbirthdate.Name = "dtpbirthdate";
+			this.dtpbirthdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.dtpbirthdate.Size = new System.Drawing.Size(200, 20);
 			this.dtpbirthdate.TabIndex = 15;
 			// 
@@ -235,12 +237,23 @@ namespace register
 			this.lblbithdate.TabIndex = 16;
 			this.lblbithdate.Text = "Fecha de naciemto";
 			// 
+			// btncalc
+			// 
+			this.btncalc.Location = new System.Drawing.Point(220, 400);
+			this.btncalc.Name = "btncalc";
+			this.btncalc.Size = new System.Drawing.Size(75, 23);
+			this.btncalc.TabIndex = 17;
+			this.btncalc.Text = "Calcular";
+			this.btncalc.UseVisualStyleBackColor = true;
+			this.btncalc.Click += new System.EventHandler(this.BtncalcClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
 			this.ClientSize = new System.Drawing.Size(509, 461);
+			this.Controls.Add(this.btncalc);
 			this.Controls.Add(this.lblbithdate);
 			this.Controls.Add(this.dtpbirthdate);
 			this.Controls.Add(this.lblrfcshow);
@@ -266,6 +279,7 @@ namespace register
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btncalc;
 		private System.Windows.Forms.Label lblbithdate;
 		private System.Windows.Forms.DateTimePicker dtpbirthdate;
 		private System.Windows.Forms.Label lblrfcshow;
