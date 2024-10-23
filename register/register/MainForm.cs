@@ -18,7 +18,6 @@ namespace register
 	/// </summary>
 	public partial class MainForm : Form
 	{
-		string homoclave = "0H0";		
 		public MainForm()
 		{
 			//
@@ -85,6 +84,9 @@ namespace register
 			else {return true;}
 		}
 
+		
+		string homoclave = "0H0";	
+
 		void rfc_calc()
 		{
 			string rfc = "";
@@ -110,7 +112,7 @@ namespace register
 
 			rfc += homoclave.ToString();
 			
-			MessageBox.Show(rfc);
+			lblrfcshow.Text = rfc;
 		}
 	}
 }
