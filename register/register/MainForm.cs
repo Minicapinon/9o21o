@@ -30,33 +30,37 @@ namespace register
 			//
 		}
 		
+		// Se usa para detectar el boton
 		void BtncalcClick(object sender, EventArgs e)
 		{
 			calculation();
 		}
 
+		// String para la fecha de nacimiento
 		string bida;
 
+		// Funcion para calcular y comprobar
 		void calculation()
 		{
 			// declaracion de variables
-			DateTime birthdate = dtpbirthdate.Value;
-			bida = birthdate.ToString();
-			bool emp = compempty();
-			bool siize;
-			//bool
+			DateTime birthdate = dtpbirthdate.Value; // PAra la fecha de nacimiento
+			bida = birthdate.ToString(); // Lo convierte a string
+			
+			bool emp = compempty(); // Bool para saber si no esta vacio
+			bool siize; // Bool para saber el tamaño
 
-			if(!emp)
+			if(!emp) // Comprueba si no esta vacio
 			{
-				siize = ssize();
+				siize = ssize(); // Se comprueba el tamano
 
-				if(siize) rfc_calc();
-				else { MessageBox.Show("El nombre, appelido1 o appellido 2 estan mal"); }
+				if(siize) rfc_calc(); // Si es mayor a 2
+				else { MessageBox.Show("El nombre, appelido1 o appellido 2 estan mal"); } // Mensaje si no
 			}
-				
-			else { MessageBox.Show("Ningun campo puede estar vacio"); }
+			// En caso contrario
+			else { MessageBox.Show("Ningun campo puede estar vacio"); } 
 		}
 
+		// Funcion para saber si es vacio
 		bool compempty()
 		{
 			if(txtname.Text == "") return true;
@@ -67,26 +71,28 @@ namespace register
 			else return false;
 		}
 
+		// comprueba el tamaño
 		bool ssize()
 		{
 			string temp = txtname.Text;
 			int size = temp.Length;
-
-			string temp2 = txtape1.Text;
-			int size2 = temp.Length;
- 
-			string temp3 = txtape2.Text;
-			int size3 = temp.Length;
-
 			if(size < 2) return false;
-			else if(size2 < 2) return false;
-			else if(size3 < 2) return false;
-			else {return true;}
+
+			temp = txtape1.Text;
+			size = temp.Length;
+			if(size < 2) return false;
+ 
+			temp = txtape2.Text;
+			size = temp.Length;
+			if(size < 2) return false;
+			
+			return true;
 		}
 
-		
+		// Para la homoclave
 		string homoclave = "0H0";	
 
+		// Calcula el rfc a partir de los datos dados
 		void rfc_calc()
 		{
 			string rfc = "";
