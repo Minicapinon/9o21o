@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace register
 {
 	/// <summary>
@@ -17,6 +18,7 @@ namespace register
 	/// </summary>
 	public partial class MainForm : Form
 	{
+		string homoclave = "0H0";		
 		public MainForm()
 		{
 			//
@@ -96,7 +98,17 @@ namespace register
 			rfc = rfc.ToUpper();
 			
 			trash = bida;
-			rfc += trash.Substring(8,9);
+
+			rfc += trash[8];
+			rfc += trash[9];
+
+			rfc += trash[3];
+			rfc += trash[4];
+
+			rfc += trash[0];
+			rfc += trash[1];
+
+			rfc += homoclave.ToString();
 			
 			MessageBox.Show(rfc);
 		}

@@ -156,6 +156,13 @@ namespace register
 			// cmbsemsel
 			// 
 			this.cmbsemsel.FormattingEnabled = true;
+			this.cmbsemsel.Items.AddRange(new object[] {
+									"Primero",
+									"Segundo",
+									"Tercero",
+									"Cuarto",
+									"Quinto",
+									"Sexto"});
 			this.cmbsemsel.Location = new System.Drawing.Point(260, 250);
 			this.cmbsemsel.MaximumSize = new System.Drawing.Size(200, 0);
 			this.cmbsemsel.MinimumSize = new System.Drawing.Size(200, 0);
