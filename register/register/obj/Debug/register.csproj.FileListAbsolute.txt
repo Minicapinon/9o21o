@@ -12,3 +12,4 @@ C:\Users\cc2-pc06\Documents\OwO\9o21o\register\register\obj\Debug\register.MainF
 C:\Users\cc2-pc06\Documents\OwO\9o21o\register\register\obj\Debug\register.csproj.GenerateResource.Cache
 C:\Users\cc2-pc06\Documents\OwO\9o21o\register\register\obj\Debug\register.exe
 C:\Users\cc2-pc06\Documents\OwO\9o21o\register\register\obj\Debug\register.pdb
+C:\Users\cc2-pc06\Documents\OwO\9o21o\register\register\obj\Debug\register.wawa.resources

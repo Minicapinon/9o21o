@@ -3,7 +3,6 @@
  * User: CapinonM
  * Date: 22/10/2024
  * Time: 07:25 a. m.
- * 
  */
 using System;
 using System.Collections.Generic;
@@ -92,10 +91,10 @@ namespace register
 		// Para la homoclave
 		string homoclave = "0H0";	
 
+		string rfc = "";
 		// Calcula el rfc a partir de los datos dados
 		void rfc_calc()
 		{
-			string rfc = "";
 			string trash = txtape1.Text;
 			rfc += trash.Substring(0,2);
 			trash = txtape2.Text;
@@ -118,7 +117,19 @@ namespace register
 
 			rfc += homoclave.ToString();
 			
-			lblrfcshow.Text = rfc;
+			opennewform();
+		}
+
+		void opennewform()
+		{
+			wawa form = new wawa();
+			form.rfc = rfc;
+			form.namep = txtname.Text;
+
+			form.FormClosed += (s, args) => { this.Show();};
+
+			form.Show();
+			this.Hide();
 		}
 	}
 }

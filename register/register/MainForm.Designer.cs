@@ -50,8 +50,6 @@ namespace register
 			this.lblsemes = new System.Windows.Forms.Label();
 			this.txtphone = new System.Windows.Forms.TextBox();
 			this.txtaddress = new System.Windows.Forms.TextBox();
-			this.lbltextrfc = new System.Windows.Forms.Label();
-			this.lblrfcshow = new System.Windows.Forms.Label();
 			this.dtpbirthdate = new System.Windows.Forms.DateTimePicker();
 			this.lblbithdate = new System.Windows.Forms.Label();
 			this.btncalc = new System.Windows.Forms.Button();
@@ -201,48 +199,27 @@ namespace register
 			this.txtaddress.Size = new System.Drawing.Size(200, 20);
 			this.txtaddress.TabIndex = 12;
 			// 
-			// lbltextrfc
-			// 
-			this.lbltextrfc.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbltextrfc.Location = new System.Drawing.Point(50, 290);
-			this.lbltextrfc.MaximumSize = new System.Drawing.Size(200, 20);
-			this.lbltextrfc.MinimumSize = new System.Drawing.Size(200, 20);
-			this.lbltextrfc.Name = "lbltextrfc";
-			this.lbltextrfc.Size = new System.Drawing.Size(200, 20);
-			this.lbltextrfc.TabIndex = 13;
-			this.lbltextrfc.Text = "Su RFC es:";
-			// 
-			// lblrfcshow
-			// 
-			this.lblrfcshow.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblrfcshow.Location = new System.Drawing.Point(50, 310);
-			this.lblrfcshow.MaximumSize = new System.Drawing.Size(200, 20);
-			this.lblrfcshow.MinimumSize = new System.Drawing.Size(200, 20);
-			this.lblrfcshow.Name = "lblrfcshow";
-			this.lblrfcshow.Size = new System.Drawing.Size(200, 20);
-			this.lblrfcshow.TabIndex = 14;
-			this.lblrfcshow.Text = "___";
-			// 
 			// dtpbirthdate
 			// 
-			this.dtpbirthdate.Location = new System.Drawing.Point(260, 310);
-			this.dtpbirthdate.MaximumSize = new System.Drawing.Size(200, 20);
-			this.dtpbirthdate.MinimumSize = new System.Drawing.Size(200, 20);
+			this.dtpbirthdate.Location = new System.Drawing.Point(130, 310);
+			this.dtpbirthdate.MaximumSize = new System.Drawing.Size(255, 20);
+			this.dtpbirthdate.MinimumSize = new System.Drawing.Size(255, 20);
 			this.dtpbirthdate.Name = "dtpbirthdate";
 			this.dtpbirthdate.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.dtpbirthdate.Size = new System.Drawing.Size(200, 20);
+			this.dtpbirthdate.Size = new System.Drawing.Size(255, 20);
 			this.dtpbirthdate.TabIndex = 15;
 			// 
 			// lblbithdate
 			// 
 			this.lblbithdate.Font = new System.Drawing.Font("Lucida Fax", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblbithdate.Location = new System.Drawing.Point(260, 290);
-			this.lblbithdate.MaximumSize = new System.Drawing.Size(200, 20);
-			this.lblbithdate.MinimumSize = new System.Drawing.Size(200, 20);
+			this.lblbithdate.Location = new System.Drawing.Point(130, 287);
+			this.lblbithdate.MaximumSize = new System.Drawing.Size(255, 20);
+			this.lblbithdate.MinimumSize = new System.Drawing.Size(255, 20);
 			this.lblbithdate.Name = "lblbithdate";
-			this.lblbithdate.Size = new System.Drawing.Size(200, 20);
+			this.lblbithdate.Size = new System.Drawing.Size(255, 20);
 			this.lblbithdate.TabIndex = 16;
 			this.lblbithdate.Text = "Fecha de naciemto";
+			this.lblbithdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// btncalc
 			// 
@@ -263,8 +240,6 @@ namespace register
 			this.Controls.Add(this.btncalc);
 			this.Controls.Add(this.lblbithdate);
 			this.Controls.Add(this.dtpbirthdate);
-			this.Controls.Add(this.lblrfcshow);
-			this.Controls.Add(this.lbltextrfc);
 			this.Controls.Add(this.txtaddress);
 			this.Controls.Add(this.txtphone);
 			this.Controls.Add(this.lblsemes);
@@ -289,8 +264,6 @@ namespace register
 		private System.Windows.Forms.Button btncalc;
 		private System.Windows.Forms.Label lblbithdate;
 		private System.Windows.Forms.DateTimePicker dtpbirthdate;
-		private System.Windows.Forms.Label lblrfcshow;
-		private System.Windows.Forms.Label lbltextrfc;
 		private System.Windows.Forms.TextBox txtaddress;
 		private System.Windows.Forms.TextBox txtphone;
 		private System.Windows.Forms.Label lblsemes;
