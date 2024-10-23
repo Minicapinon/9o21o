@@ -131,5 +131,12 @@ namespace register
 			form.Show();
 			this.Hide();
 		}
+		
+		void BtnabClick(object sender, EventArgs e)
+		{
+			about form = new about();
+
+			form.Show();		
+		}
 	}
 }

@@ -53,6 +53,7 @@ namespace register
 			this.dtpbirthdate = new System.Windows.Forms.DateTimePicker();
 			this.lblbithdate = new System.Windows.Forms.Label();
 			this.btncalc = new System.Windows.Forms.Button();
+			this.btnab = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lbltittle
@@ -231,12 +232,23 @@ namespace register
 			this.btncalc.UseVisualStyleBackColor = true;
 			this.btncalc.Click += new System.EventHandler(this.BtncalcClick);
 			// 
+			// btnab
+			// 
+			this.btnab.Location = new System.Drawing.Point(12, 426);
+			this.btnab.Name = "btnab";
+			this.btnab.Size = new System.Drawing.Size(75, 23);
+			this.btnab.TabIndex = 18;
+			this.btnab.Text = "Acerca de";
+			this.btnab.UseVisualStyleBackColor = true;
+			this.btnab.Click += new System.EventHandler(this.BtnabClick);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
 			this.ClientSize = new System.Drawing.Size(509, 461);
+			this.Controls.Add(this.btnab);
 			this.Controls.Add(this.btncalc);
 			this.Controls.Add(this.lblbithdate);
 			this.Controls.Add(this.dtpbirthdate);
@@ -261,6 +273,7 @@ namespace register
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnab;
 		private System.Windows.Forms.Button btncalc;
 		private System.Windows.Forms.Label lblbithdate;
 		private System.Windows.Forms.DateTimePicker dtpbirthdate;
